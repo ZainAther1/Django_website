@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+
+{%block title%} This is Contact title block {% endblock title %}
+
+
+{% block body %} 
+
+<div class="container-123" px-0 h-4>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          {% comment %} <img src="https://source.unsplash.com/1600x600/?about" class="d-block w-100" alt="..."> {% endcomment %}
+          <img src="/static/img/contact_images/photo-1633360821222-7e8df83639fb.jpg" width="1370" height="480" alt="..."  >
+          <div class="carousel-caption d-none d-md-block">
+            {% comment %} <h2><font color="black"> First Slide </font></h2> {% endcomment %}
+          </div>
+        </div>
+
+        
+        
+      </div>
+      
+    </div>
+  </div>
+  <h1 style="text-align:center; margin-top:40px" > Contact Us </h1>
+
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Name</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" name="name"placeholder="name@example.com">
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" name="emailaddress" placeholder="Enter your email">
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Phone Number</label>
+    <input type="phone" class="form-control" id="exampleFormControlInput1" name="phonenumber" placeholder="Enter your phone number">
+  </div>
+ 
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Comments</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" name="Enter your comments" rows="3"></textarea>
+  </div>
+  
+{% endblock body %}
